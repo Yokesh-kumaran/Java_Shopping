@@ -43,6 +43,7 @@ A project for E-Commerce in command line using Java.
 ## Components used
 
 - App Component
+
 - Admin Component
 - Authentication Component
 - Cart Component
@@ -52,9 +53,58 @@ A project for E-Commerce in command line using Java.
 - Product Component
 
 
+## Working of components
+
+- App component
+        
+        - The Application starts here by loading all the products and categories.
+        - The welcome message prints and the authentication starts running.
+
+- Authentication component
+
+        - Login validation will be done here.
+        - Registration also will be done by by utilizing the users csv file.
+
+- Home component
+
+        - After validation, the home page will be loaded for users, with the 5 options like,
+            1. Show Category
+            2. Show products
+            3. Show Cart
+            4. Show Orders
+            5. Logout
+
+- Admin component
+
+        - Once admin validation done, admin home page will be shown with 6 options like,
+            1. Show all products
+            2. Add product 
+            3. Delete product
+            4. See all users
+            5. See all Orders
+            6. Logout
+
+- Category component
+       
+        - Categories will be loaded using the category component.
+
+- Product component
+
+        Products will be loaded with the show product method in product component and will get the input from the user for add to cart.
+
+- Cart component
+
+        - Adding products to cart page will be done here for specific users with loggedInUser.
+
+- Order component
+
+        - After checkout, the new csv file will be created with order date and id.
+
+
 ## For Storage purpose,
 
 - Users in CSV file.
+
 - Category in ArrayList.
 - Products in ArrayList.
 - Cart in ArrayList.
